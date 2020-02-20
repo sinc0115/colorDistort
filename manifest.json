@@ -1,7 +1,7 @@
 {
   "browser_action": {
     "browser_style": true,
-    "default_title": "Apply color distortion filter",
+    "default_title": "Color Distort",
     "default_icon": {
       "48": "icons/icon48dp.png"
     }
@@ -17,8 +17,8 @@
       "js": [ "contentScript.js" ]
     }
   ],
-  "description": "Color Distortion Filter",
-  "homepage_url": "https://github.com/MaximPerry/Firefox-GrayScaleFilter",
+  "description": "Apply red-green color blindness simulation",
+  "homepage_url": "https://github.com/sinc0115/colorDistort/",
   "icons": {
     "48": "icons/icon48dp.png"
   },
