@@ -1,0 +1,35 @@
+{
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Apply color distortion filter",
+    "default_icon": {
+      "48": "icons/icon48dp.png"
+    }
+  },
+  "background": { 
+	"scripts": [
+		"backgroundScript.js"
+	] 
+  },
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "contentScript.js" ]
+    }
+  ],
+  "description": "Color Distortion Filter",
+  "homepage_url": "https://github.com/MaximPerry/Firefox-GrayScaleFilter",
+  "icons": {
+    "48": "icons/icon48dp.png"
+  },
+  "manifest_version": 2,
+  "name": "Color Distort Filter",
+  "permissions": [
+    "<all_urls>",
+    "notifications",
+    "storage",
+    "activeTab"
+  ],
+  "version": "1",
+  "author": "Katherine Sinclair"
+}
